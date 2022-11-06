@@ -15,7 +15,7 @@ const Mountain = () => {
 
   const getData =()=>{
  dispatch(getRequest1())
- return axios.get("http://localhost:8080/profile")
+ return axios.get("http://localhost:8080/mountain")
  .then((r)=>{
   dispatch(getSuccess1(r.data))
   console.log(r.data)
@@ -33,29 +33,29 @@ const Mountain = () => {
 
   return (
     <div className={style.main}>
-         {profile.map((item)=>(
-            
-            <div> {item.id}
-             
-             <div> <img src={item.profile_pic} alt="" /></div>
+    {profile.map((item)=>(
+       
+       <div> {item.id}
+        
+        <div className={style.container}> <img src={item.profile_pic} alt="" />
 
-             <div className={style.days}>
-               <div>{item.day} </div>
-               <div>{item.time} </div>
-             </div>
+        <div className={style.days1}>
+          <div>{item.day} </div>
+          <div>{item.time} </div>
+        </div>
 
-             <div className={style.heat}>
-               <div>{item.heats} </div>
-               <div> {item.highlight} </div>
-             </div>
-            
-            
-            </div>
-            
-          
-         )) } 
-      
-    </div>
+        <div className={style.heat}>
+          <button>{item.heats} </button>
+          <button> {item.highlight} </button>
+        </div>
+       
+       
+       </div>
+       </div>
+     
+    )) } 
+ 
+</div>
   );
 };
 

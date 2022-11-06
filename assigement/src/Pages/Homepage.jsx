@@ -32,12 +32,14 @@ const Homepage = () => {
 
 
   return (
-    <div className={style.main}>
+    <div
+      
+    className={style.main}>
          {profile.map((item)=>(
             
             <div> {item.id}
              
-             <div> <img src={item.profile_pic} alt="" /></div>
+             <div className={style.container}> <img src={item.profile_pic} alt="" />
 
              <div className={style.days}>
                <div>{item.day} </div>
@@ -45,13 +47,13 @@ const Homepage = () => {
              </div>
 
              <div className={style.heat}>
-               <div>{item.heats} </div>
-               <div> {item.highlight} </div>
+               <button>{item.heats} </button>
+               <button> {item.highlight} </button>
              </div>
             
             
             </div>
-            
+            </div>
           
          )) } 
       

@@ -1,21 +1,68 @@
+
+*{
+    background-color: rgb(36, 33, 33);
+    color: white;
+}
 .nav{
     display: flex;
     /* border: 1px solid red; */
     justify-content: center;
     gap: 90px;
-    background-color: rgb(133, 133, 133);
+    background-color: black
     /* color:rgb(180, 171, 171) */
 }
 .main{
     display: flex;
     justify-content: center;
     gap: 20px;
+
 }
 .days{
+    /* display: flex;
+    justify-content: space-around; */
+    /* matgin: 80px; */
     display: flex;
-    gap: 40px;
+    position: absolute;
+  bottom: 36px;
+  left: 4px;
+  gap: 95px;
+  justify-content: space-evenly;
+  
+
 }
 .heat{
     display: flex;
-    gap: 20px;
+    position: absolute;
+  bottom: 10px;
+
+  left: 14px;
+  gap: 20px;
+  /* background-color: rgb(170, 170, 170); */
+}
+
+.container{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.days1{
+    display: flex;
+    position: absolute;
+  bottom: 36px;
+  left: 14px;
+  gap: 120px;
+  /* justify-content: space-evenly; */
+  
+
+}
+.days2{
+   
+    display: flex;
+    position: absolute;
+  bottom: 36px;
+  left: 4px;
+  gap: 50px;
+  /* justify-content: space-evenly; */
+  
+
 }

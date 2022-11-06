@@ -1,9 +1,11 @@
-import { GET_FAILURE, GET_FAILURE1, GET_REQUEST, GET_REQUEST1, GET_SUCCESS, GET_SUCCESS1 } from "./actionTypes";
+import { GET_FAILURE, GET_FAILURE1, GET_FAILURE2, GET_FAILURE3, GET_REQUEST, GET_REQUEST1, GET_REQUEST2, GET_REQUEST3, GET_SUCCESS, GET_SUCCESS1, GET_SUCCESS2, GET_SUCCESS3 } from "./actionTypes";
 
 
 const initialState = {
     profileData: [],
     mountain:[],
+    Road:[],
+    Track:[],
     isLoading: false,
     isError: false,
   };
@@ -68,6 +70,63 @@ const initialState = {
           isError:true,
           
         }
+
+        // 2nd //////
+        case GET_REQUEST2:
+  
+          return{
+            ...oldState,
+            isLoading:true,
+            isError:false
+          }
+      
+          case GET_SUCCESS2:
+      
+            return{
+              ...oldState,
+              isLoading:false,
+              isError:false,
+              Road: [...payload]
+      
+            }
+      
+            case GET_FAILURE2:
+      
+          return{
+            ...oldState,
+            isLoading:false,
+            isError:true,
+            
+          }
+
+          //// 3rd ///
+
+          case GET_REQUEST3:
+  
+            return{
+              ...oldState,
+              isLoading:true,
+              isError:false
+            }
+        
+            case GET_SUCCESS3:
+        
+              return{
+                ...oldState,
+                isLoading:false,
+                isError:false,
+                Track: [...payload]
+        
+              }
+        
+              case GET_FAILURE3:
+        
+            return{
+              ...oldState,
+              isLoading:false,
+              isError:true,
+              
+            }
 
    default: return oldState;
   
