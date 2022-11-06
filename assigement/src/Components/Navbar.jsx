@@ -15,14 +15,14 @@ function Navbar() {
 
     
     <div className={style.div}>
-   <span className={style.start} > <Link href="/"><i class="fa-solid fa-bicycle"></i></Link> </span></div> 
+   <span className={style.start} > <Link to="/"><i class="fa-solid fa-bicycle"></i></Link> </span></div> 
 
    <div className={style.div}>
-   <span className={style.start} > <Link href="/truck"> <i class="fa-regular fa-person-skiing"></i></Link> </span></div> 
+   <span className={style.start} > <Link to="/truck"> <i class="fa-regular fa-person-skiing"></i></Link> </span></div> 
 
 
    <div className={style.div}>
-   <span className={style.start} > <Link href="/mountain"><i class="fa-solid fa-person-skating"></i></Link> </span></div> 
+   <span className={style.start} > <Link to="/mountain"><i class="fa-solid fa-person-skating"></i></Link> </span></div> 
   
   
   
