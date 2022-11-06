@@ -22,7 +22,7 @@ function Navbar() {
 
 
    <div className={style.div}>
-   <span className={style.start} > <a href="/mountain"><i class="fa-regular fa-person-skiing"></i></a> </span></div> 
+   <span className={style.start} > <a href="/mountain"><i class="fa-solid fa-person-skating"></i></a> </span></div> 
   
   
   

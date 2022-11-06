@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { getFailure, getFailure1, getFailure3, getRequest, getRequest1, getRequest3, getSuccess, getSuccess1, getSuccess3 } from "../Redux/action";
+import {  getFailure3,  getRequest3, getSuccess3 } from "../Redux/action";
 import axios from "axios"
 import style from "./style.module.css"
 
