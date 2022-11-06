@@ -7,10 +7,24 @@ function Navbar() {
     <div>
     
    <div className={style.font}>
-   <i className={style.start} class="fa-solid fa-star"></i>
-   <i class="fa-light fa-person-biking"></i>
-   <i class="fa-regular fa-person-skiing"></i>
-   <i className="fa-solid fa-golf-ball-tee"></i>
+   <div className={style.div}>
+   <span className={style.start} ><i  class="fa-solid fa-star"></i></span></div> 
+
+   <div className={style.div}>
+   <span className={style.start} > <i class="fa-light fa-person-biking"></i></span></div> 
+
+   <div className={style.div}>
+   <span className={style.start} > <i class="fa-solid fa-bicycle"></i></span></div> 
+
+   <div className={style.div}>
+   <span className={style.start} > <i class="fa-regular fa-person-skiing"></i></span></div> 
+
+
+   <div className={style.div}>
+   <span className={style.start} > <i className="fa-solid fa-golf-ball-tee"></i></span></div> 
+  
+  
+  
    
    </div>
    
