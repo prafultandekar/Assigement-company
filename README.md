@@ -1,6 +1,6 @@
 # Assigement-company
 
- Netlify Link - https://brilliant-sunburst-2756fb.netlify.app
+ Netlify Link - https://flourishing-peony-e253b7.netlify.app
 
   step-1 
   npm i create-react-app assigement
