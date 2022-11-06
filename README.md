@@ -18,3 +18,5 @@
   step -5 
     using redux fatch all the db.json data.
    
+   setp- 6 
+    Its responsive app.
